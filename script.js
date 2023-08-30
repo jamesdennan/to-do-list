@@ -8,7 +8,7 @@ function inputLength() {
 
 function createListElement() {
     var li = document.createElement("li");
-    var capitalizedValue = input.value.charAt(0).toUpperCase() + input.value.slice(1);
+    var capitalizedValue = input.value.toUpperCase();
     li.appendChild(document.createTextNode(capitalizedValue));
     ul.appendChild(li);
     input.value = "";
