@@ -7,10 +7,11 @@ function inputLength() {
 }
 
 function createListElement() {
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
-	input.value = "";
+    var li = document.createElement("li");
+    var capitalizedValue = input.value.charAt(0).toUpperCase() + input.value.slice(1);
+    li.appendChild(document.createTextNode(capitalizedValue));
+    ul.appendChild(li);
+    input.value = "";
 }
 
 function addListAfterClick() {
